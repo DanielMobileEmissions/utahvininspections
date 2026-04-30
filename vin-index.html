@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Mobile VIN Inspection Utah | We Come to You | MobileEmissions.com</title>
+<meta name="description" content="Need a VIN inspection in Utah? MobileEmissions.com performs mobile VIN inspections at your home or workplace. We complete the TC-661 Certificate of Inspection so you can register your vehicle at the Utah DMV. Serving Utah County, Davis County, and Cache County."/>
+<meta name="keywords" content="VIN inspection Utah, mobile VIN inspection Utah, VIN inspection near me, Utah VIN inspection, TC-661 Utah, certificate of inspection Utah, vehicle identification number inspection Utah, VIN check Utah, mobile emissions VIN inspection, Utah County VIN inspection, Davis County VIN inspection, Cache County VIN inspection, out of state vehicle registration Utah"/>
+<meta property="og:title" content="Mobile VIN Inspection Utah | MobileEmissions.com"/>
+<meta property="og:description" content="Mobile VIN inspections in Utah. We come to your home or workplace and complete the TC-661 Certificate of Inspection so you can register at the DMV."/>
+<meta property="og:url" content="https://utahvininspections.com"/>
+<meta property="og:type" content="website"/>
+<link rel="canonical" href="https://utahvininspections.com"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --blue: #02adff;
+  --blue-dark: #0199e0;
+  --navy: #0a3d5c;
+  --navy-light: #1a5276;
+  --text: #111827;
+  --muted: #6b7280;
+  --green: #22C97A;
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Nunito', -apple-system, sans-serif;
+  color: var(--text); background: #fff;
+  -webkit-font-smoothing: antialiased; overflow-x: hidden;
+}
+
+/* ── HEADER ── */
+.site-header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
+  background: rgba(255,255,255,0.97); backdrop-filter: blur(8px);
+  border-bottom: 1.5px solid #e8f4fd;
+  padding: 0 24px; height: 64px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo { display: flex; align-items: center; text-decoration: none; }
+.logo img { height: 40px; width: auto; display: block; }
+.header-cta { display: flex; align-items: center; gap: 10px; }
+.btn-call {
+  display: flex; align-items: center; gap: 6px;
+  background: transparent; border: 2px solid var(--blue);
+  color: var(--blue); font-family: 'Nunito', sans-serif;
+  font-size: 13px; font-weight: 800; padding: 8px 14px;
+  border-radius: 8px; text-decoration: none; transition: all 0.2s; white-space: nowrap;
+}
+.btn-call:hover { background: var(--blue); color: #fff; }
+.btn-book {
+  display: flex; align-items: center; gap: 6px;
+  background: var(--blue); color: #fff;
+  font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: 800;
+  padding: 8px 14px; border-radius: 8px; text-decoration: none;
+  transition: background 0.2s; white-space: nowrap;
+}
+.btn-book:hover { background: var(--blue-dark); }
+
+/* ── ALERT BANNER ── */
+.alert-banner {
+  margin-top: 64px;
+  background: linear-gradient(135deg, #fff7ed, #fef3c7);
+  border-bottom: 2px solid #fed7aa;
+  padding: 14px 24px;
+}
+.alert-banner-inner {
+  max-width: 900px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: center;
+  gap: 12px; flex-wrap: wrap;
+}
+.alert-icon { font-size: 20px; flex-shrink: 0; }
+.alert-text { font-size: 14px; font-weight: 700; color: #92400e; line-height: 1.4; text-align: center; }
+.alert-text strong { color: #78350f; }
+.alert-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--blue); color: #fff;
+  font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: 800;
+  padding: 7px 14px; border-radius: 8px; text-decoration: none;
+  white-space: nowrap; transition: background .2s; flex-shrink: 0;
+}
+.alert-link:hover { background: var(--blue-dark); }
+
+/* ── HERO ── */
+.hero {
+  padding: 50px 40px 60px;
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 48px; align-items: center;
+  min-height: calc(100vh - 120px);
+}
+.hero-left { display: flex; flex-direction: column; gap: 0; }
+
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #e8f7ff; border: 1.5px solid #bae0ff;
+  color: var(--blue); font-size: 12px; font-weight: 800;
+  padding: 6px 14px; border-radius: 999px;
+  margin-bottom: 18px; letter-spacing: 0.5px; text-transform: uppercase;
+  width: fit-content;
+}
+.hero-badge svg { width: 14px; height: 14px; flex-shrink: 0; }
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 900; color: var(--navy);
+  line-height: 1.05; margin-bottom: 8px;
+}
+.hero h1 span { color: var(--blue); display: block; }
+.hero-sub {
+  font-size: 1.05rem; color: var(--muted); font-weight: 700;
+  margin-bottom: 20px; line-height: 1.6;
+}
+
+/* County call cards */
+.county-cards {
+  display: flex; flex-direction: column; gap: 10px;
+  margin-bottom: 22px;
+}
+.county-card {
+  display: flex; align-items: center; justify-content: space-between;
+  background: #f4fbff; border: 1.5px solid #bae0ff;
+  border-radius: 12px; padding: 12px 16px; gap: 12px;
+}
+.county-info { display: flex; align-items: center; gap: 10px; flex: 1; }
+.county-icon {
+  width: 36px; height: 36px; background: var(--blue); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.county-icon svg { width: 16px; height: 16px; }
+.county-name { font-size: 15px; font-weight: 800; color: var(--navy); }
+.county-num { font-size: 12px; font-weight: 700; color: var(--blue); }
+.county-actions { display: flex; gap: 6px; flex-shrink: 0; }
+.county-call {
+  display: inline-flex; align-items: center;
+  background: transparent; border: 1.5px solid var(--blue);
+  color: var(--blue); font-family: 'Nunito', sans-serif;
+  font-size: 12px; font-weight: 800; padding: 7px 12px;
+  border-radius: 7px; text-decoration: none; white-space: nowrap;
+  transition: all .2s;
+}
+.county-call:hover { background: var(--blue); color: #fff; }
+.county-text {
+  display: inline-flex; align-items: center;
+  background: var(--blue); border: 1.5px solid var(--blue);
+  color: #fff; font-family: 'Nunito', sans-serif;
+  font-size: 12px; font-weight: 800; padding: 7px 12px;
+  border-radius: 7px; text-decoration: none; white-space: nowrap;
+  transition: all .2s;
+}
+.county-text:hover { background: var(--blue-dark); border-color: var(--blue-dark); }
+
+.hero-trust {
+  display: flex; align-items: center; gap: 16px;
+  flex-wrap: wrap; margin-bottom: 24px;
+}
+.trust-stars { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 800; color: var(--navy); }
+.stars { color: #f59e0b; font-size: 16px; letter-spacing: 1px; }
+.trust-badge { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; color: var(--muted); }
+.trust-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--blue); }
+
+/* Widget */
+.widget-wrap {
+  background: #fff; border-radius: 14px;
+  box-shadow: 0 8px 40px rgba(2,17,37,0.12);
+  padding: 20px; border: 1.5px solid #e8f4fd;
+}
+.widget-title { font-size: 16px; font-weight: 900; color: var(--navy); margin-bottom: 2px; }
+.widget-sub { font-size: 13px; color: var(--muted); margin-bottom: 14px; font-weight: 600; }
+
+.ots-zip-row { display: flex; gap: 8px; width: 100%; margin-bottom: 4px; }
+.ots-zip-input {
+  flex: 1; min-width: 0; height: 46px;
+  border: 2px solid #e4e8f0; border-radius: 10px;
+  padding: 0 14px; font-size: 16px; font-weight: 700;
+  color: #111827; font-family: 'Nunito', sans-serif; outline: none;
+  transition: border-color .2s; -webkit-appearance: none;
+}
+.ots-zip-input:focus { border-color: var(--blue); }
+.ots-zip-input::placeholder { color: #c0c8d8; font-weight: 500; font-size: 15px; }
+.ots-zip-btn {
+  height: 46px; padding: 0 18px; background: var(--blue); color: #fff;
+  border: none; border-radius: 10px; font-size: 15px; font-weight: 800;
+  cursor: pointer; font-family: 'Nunito', sans-serif; flex-shrink: 0; transition: background .2s;
+}
+.ots-zip-btn:hover { background: var(--blue-dark); }
+.ots-zip-err { font-size: 12px; color: #ef4444; font-weight: 600; min-height: 14px; padding-left: 4px; margin-bottom: 4px; }
+.ots-divider { display: flex; align-items: center; gap: 10px; color: #6b7280; font-size: 13px; font-weight: 700; margin: 8px 0; }
+.ots-divider::before, .ots-divider::after { content: ''; flex: 1; height: 1.5px; background: #e4e8f0; }
+.ots-loc-btn {
+  width: 100%; height: 46px; background: #f0f9ff;
+  border: 2px solid #bae0ff; border-radius: 10px;
+  color: #0369a1; font-size: 15px; font-weight: 800;
+  cursor: pointer; font-family: 'Nunito', sans-serif;
+  display: flex; align-items: center; justify-content: center; gap: 8px; transition: all .15s;
+}
+.ots-loc-btn:hover { background: #e0f2fe; border-color: var(--blue); }
+.ots-loc-btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+.ots-state { display: none; flex-direction: column; align-items: center; gap: 12px; }
+.ots-state.on { display: flex; }
+.ots-spinner { width: 30px; height: 30px; border: 4px solid #e4e8f0; border-top-color: var(--blue); border-radius: 50%; animation: otsSpin .7s linear infinite; }
+@keyframes otsSpin { to { transform: rotate(360deg); } }
+.ots-ld-t { font-weight: 800; font-size: 14px; color: var(--blue); }
+.ots-ld-s { font-size: 12px; color: var(--muted); text-align: center; }
+.ots-addr-card { width: 100%; background: #f0f9ff; border: 1.5px solid #bae0ff; border-radius: 10px; padding: 10px 12px; display: flex; align-items: flex-start; gap: 10px; }
+.ots-pin-dot { width: 28px; height: 28px; background: var(--blue); border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+.ots-pin-dot svg { width: 13px; height: 13px; display: block; }
+.ots-addr-body { flex: 1; min-width: 0; }
+.ots-street { width: 100%; font-weight: 800; font-size: 14px; color: #111827; border: none; background: transparent; outline: none; border-bottom: 1.5px dashed #bae0ff; font-family: 'Nunito', sans-serif; padding: 0; margin-bottom: 2px; }
+.ots-city { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.ots-btn-row { display: flex; gap: 8px; width: 100%; }
+.ots-btn-green { flex: 1; height: 46px; background: var(--green); color: #fff; border: none; border-radius: 10px; font-size: 14px; font-weight: 800; cursor: pointer; font-family: 'Nunito', sans-serif; display: flex; align-items: center; justify-content: center; gap: 8px; transition: transform .1s; }
+.ots-btn-green:active { transform: scale(0.97); }
+.ots-btn-green svg { width: 16px; height: 16px; }
+.ots-btn-ghost { height: 46px; padding: 0 14px; background: transparent; color: var(--muted); border: 1.5px solid #e4e8f0; border-radius: 10px; font-size: 13px; font-weight: 800; cursor: pointer; font-family: 'Nunito', sans-serif; white-space: nowrap; }
+.ots-out { width: 100%; background: #fff7ed; border: 1.5px solid #fed7aa; border-radius: 10px; padding: 8px 12px; font-size: 13px; color: #92400e; font-weight: 600; text-align: center; display: none; }
+.ots-out.on { display: block; }
+.ots-note { font-size: 11px; color: var(--muted); text-align: center; }
+.ots-ok-t { font-weight: 900; font-size: 15px; color: #18A362; }
+.ots-ok-m { font-size: 13px; color: var(--muted); text-align: center; }
+.ots-icon { font-size: 1.8rem; }
+.ots-etitle { font-weight: 800; font-size: 14px; color: var(--text); text-align: center; }
+.ots-emsg { font-size: 13px; color: var(--muted); text-align: center; }
+.ots-btn-outline { width: 100%; height: 46px; background: transparent; border: 2px solid var(--blue); color: var(--blue); border-radius: 10px; font-size: 14px; font-weight: 800; cursor: pointer; font-family: 'Nunito', sans-serif; }
+
+/* Right col */
+.hero-right { display: flex; align-items: center; justify-content: center; }
+.hero-right img { width: 100%; max-width: 560px; height: auto; border-radius: 16px; box-shadow: 0 20px 60px rgba(2,17,37,0.15); display: block; }
+
+/* ── TRUST BAR ── */
+.trust-bar { background: #f8fbff; border-top: 1.5px solid #e8f4fd; border-bottom: 1.5px solid #e8f4fd; padding: 20px 40px; }
+.trust-bar-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 40px; flex-wrap: wrap; }
+.trust-item { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 800; color: var(--navy); }
+.trust-item svg { color: var(--blue); flex-shrink: 0; width: 18px; height: 18px; }
+
+/* ── SECTIONS ── */
+.section { padding: 80px 40px; }
+.section-inner { max-width: 1100px; margin: 0 auto; }
+.hiw-bg { background: #f8fbff; }
+.section-label { font-size: 11px; font-weight: 800; color: var(--blue); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 12px; }
+.section-title { font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 900; color: var(--navy); line-height: 1.1; margin-bottom: 16px; }
+.section-title span { color: var(--blue); }
+.section-body { font-size: 1rem; color: var(--muted); line-height: 1.7; font-weight: 600; max-width: 640px; margin-bottom: 32px; }
+
+/* TC-661 callout */
+.form-callout {
+  background: linear-gradient(135deg, #e8f7ff, #f0f9ff);
+  border: 2px solid #bae0ff; border-radius: 16px;
+  padding: 28px 32px; margin-bottom: 36px;
+  display: flex; gap: 20px; align-items: flex-start;
+}
+.form-callout-icon { font-size: 2.4rem; flex-shrink: 0; }
+.form-callout h3 { font-size: 17px; font-weight: 900; color: var(--navy); margin-bottom: 8px; }
+.form-callout p { font-size: 14px; font-weight: 600; color: var(--muted); line-height: 1.6; margin-bottom: 8px; }
+.form-callout a { color: var(--blue); font-weight: 800; text-decoration: none; }
+.form-callout a:hover { text-decoration: underline; }
+
+/* When do you need */
+.vin-callout {
+  background: #fff; border: 1.5px solid #e8f4fd;
+  border-radius: 16px; padding: 28px 32px; margin-bottom: 36px;
+  box-shadow: 0 4px 20px rgba(2,17,37,0.05);
+}
+.vin-callout h3 { font-size: 17px; font-weight: 900; color: var(--navy); margin-bottom: 14px; }
+.vin-callout ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.vin-callout li { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; font-weight: 700; color: var(--text); line-height: 1.4; }
+.vin-callout li::before { content: '✓'; color: var(--blue); font-weight: 900; font-size: 16px; flex-shrink: 0; margin-top: -1px; }
+
+/* Also need emissions */
+.emissions-callout {
+  background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+  border: 2px solid #86efac; border-radius: 16px;
+  padding: 24px 28px; margin-bottom: 0;
+  display: flex; gap: 16px; align-items: flex-start;
+}
+.emissions-callout-icon { font-size: 1.8rem; flex-shrink: 0; }
+.emissions-callout h3 { font-size: 16px; font-weight: 900; color: #14532d; margin-bottom: 6px; }
+.emissions-callout p { font-size: 14px; font-weight: 600; color: #166534; line-height: 1.6; }
+.emissions-callout a { color: #15803d; font-weight: 800; }
+
+.benefits { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; margin-top: 36px; }
+.benefit { display: flex; gap: 14px; align-items: flex-start; padding: 20px; border-radius: 12px; background: #fff; border: 1.5px solid #e8f4fd; box-shadow: 0 2px 12px rgba(2,17,37,0.05); }
+.benefit-icon { width: 42px; height: 42px; flex-shrink: 0; background: #e8f7ff; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+.benefit-body h4 { font-size: 14px; font-weight: 900; color: var(--navy); margin-bottom: 4px; }
+.benefit-body p { font-size: 13px; color: var(--muted); font-weight: 600; line-height: 1.4; }
+
+.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; margin-top: 36px; }
+.step { background: #fff; border-radius: 14px; border: 1.5px solid #e8f4fd; padding: 28px 24px; box-shadow: 0 4px 20px rgba(2,17,37,0.06); }
+.step-num { width: 42px; height: 42px; background: var(--blue); color: #fff; border-radius: 50%; font-size: 18px; font-weight: 900; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
+.step h3 { font-size: 15px; font-weight: 900; color: var(--navy); margin-bottom: 8px; }
+.step p { font-size: 13px; color: var(--muted); font-weight: 600; line-height: 1.5; }
+
+/* FAQ */
+.faq-list { display: flex; flex-direction: column; gap: 16px; max-width: 760px; }
+.faq-item { background: #fff; border: 1.5px solid #e8f4fd; border-radius: 12px; padding: 20px 24px; box-shadow: 0 2px 8px rgba(2,17,37,0.04); }
+.faq-q { font-size: 15px; font-weight: 900; color: var(--navy); margin-bottom: 8px; }
+.faq-a { font-size: 14px; color: var(--muted); font-weight: 600; line-height: 1.6; }
+.faq-a a { color: var(--blue); font-weight: 800; text-decoration: none; }
+
+/* CTA */
+.cta-banner { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%); padding: 60px 40px; text-align: center; }
+.cta-banner h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 900; color: #fff; margin-bottom: 12px; }
+.cta-banner p { font-size: 1rem; color: rgba(255,255,255,0.75); font-weight: 600; margin-bottom: 28px; }
+.cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.cta-book { display: inline-flex; align-items: center; gap: 8px; background: var(--blue); color: #fff; font-family: 'Nunito', sans-serif; font-size: 16px; font-weight: 800; padding: 14px 28px; border-radius: 10px; text-decoration: none; transition: background .2s; }
+.cta-book:hover { background: var(--blue-dark); }
+.cta-phone { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.12); color: #fff; border: 2px solid rgba(255,255,255,0.3); font-family: 'Nunito', sans-serif; font-size: 16px; font-weight: 800; padding: 14px 28px; border-radius: 10px; text-decoration: none; transition: all .2s; }
+.cta-phone:hover { background: rgba(255,255,255,0.2); }
+
+.footer { background: var(--navy); padding: 32px 24px; text-align: center; }
+.footer p { font-size: 13px; color: rgba(255,255,255,0.5); font-weight: 600; margin-bottom: 4px; }
+.footer a { color: var(--blue); text-decoration: none; }
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .hero { grid-template-columns: 1fr; padding: 30px 20px 40px; gap: 32px; min-height: unset; }
+  .hero-right { order: -1; }
+  .hero-right img { border-radius: 12px; }
+  .alert-banner { padding: 12px 16px; }
+  .alert-banner-inner { flex-direction: column; gap: 8px; }
+  .btn-call span { display: none; }
+  .section { padding: 50px 20px; }
+  .trust-bar { padding: 16px 20px; }
+  .trust-bar-inner { gap: 16px; }
+  .form-callout { flex-direction: column; gap: 12px; }
+  .emissions-callout { flex-direction: column; gap: 12px; }
+  .cta-banner { padding: 50px 20px; }
+  .county-card { flex-wrap: wrap; }
+}
+@media (max-width: 480px) {
+  .hero h1 { font-size: 1.8rem; }
+}
+
+@keyframes fadeUp { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+.hero-left > * { animation: fadeUp .5s ease both; }
+.hero-left > *:nth-child(1) { animation-delay:.05s; }
+.hero-left > *:nth-child(2) { animation-delay:.1s; }
+.hero-left > *:nth-child(3) { animation-delay:.15s; }
+.hero-left > *:nth-child(4) { animation-delay:.2s; }
+.hero-left > *:nth-child(5) { animation-delay:.25s; }
+.hero-left > *:nth-child(6) { animation-delay:.3s; }
+.hero-right { animation: fadeUp .6s ease .1s both; }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "MobileEmissions.com — Utah VIN Inspections",
+  "description": "Mobile VIN inspections in Utah. We come to your home or workplace, complete the TC-661 Certificate of Inspection, and perform your emissions test so you can register your vehicle at the DMV.",
+  "url": "https://utahvininspections.com",
+  "telephone": "+18018008179",
+  "address": { "@type": "PostalAddress", "addressRegion": "UT", "addressCountry": "US" },
+  "areaServed": ["Utah County", "Davis County", "Cache County"],
+  "serviceType": ["VIN Inspection", "Mobile VIN Inspection", "Emissions Testing", "TC-661 Certificate of Inspection"],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "246" }
+}
+</script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <a href="https://mobileemissions.com" class="logo">
+    <img src="https://raw.githubusercontent.com/DanielMobileEmissions/onthespotrenewal/main/WEBSITE%20LOGO%20V1.png" alt="MobileEmissions.com — Utah VIN Inspections"/>
+  </a>
+  <div class="header-cta">
+    <a href="tel:8018008179" class="btn-call">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16z"/></svg>
+      <span>(801) 800-8179</span>
+    </a>
+    <a href="https://mobileemissions.com/#book-now" class="btn-book">Book Now</a>
+  </div>
+</header>
+
+<!-- ALERT BANNER -->
+<div class="alert-banner">
+  <div class="alert-banner-inner">
+    <span class="alert-icon">💡</span>
+    <div class="alert-text">
+      <strong>Need a VIN inspection + emissions test?</strong> Book a standard emissions appointment and mention your VIN inspection in the booking notes — we handle both in one visit.
+    </div>
+    <a href="https://mobileemissions.com/#book-now" class="alert-link">Book Now →</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+
+    <div class="hero-badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9S3 16.97 3 12 7.03 3 12 3s9 4.03 9 9z"/></svg>
+      Utah's Only Mobile VIN Inspection
+    </div>
+
+    <h1>Mobile VIN Inspection<span>We Come to You</span></h1>
+
+    <p class="hero-sub">Need a VIN inspection near you in Utah? We come to your home, workplace, or dealership — complete the TC-661 Certificate of Inspection, and perform your emissions test so you can get registered at the DMV. No waiting at a station.</p>
+
+    <!-- County phone numbers -->
+    <div class="county-cards">
+      <div class="county-card">
+        <div class="county-info">
+          <div class="county-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16z"/></svg>
+          </div>
+          <div>
+            <div class="county-name">Utah County</div>
+            <div class="county-num">(801) 800-8179</div>
+          </div>
+        </div>
+        <div class="county-actions">
+          <a href="tel:+18018008179" class="county-call">Call</a>
+          <a href="sms:+18018008179" class="county-text">Text</a>
+        </div>
+      </div>
+      <div class="county-card">
+        <div class="county-info">
+          <div class="county-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16z"/></svg>
+          </div>
+          <div>
+            <div class="county-name">Davis County</div>
+            <div class="county-num">(435) 334-3644</div>
+          </div>
+        </div>
+        <div class="county-actions">
+          <a href="tel:+14353343644" class="county-call">Call</a>
+          <a href="sms:+14353343644" class="county-text">Text</a>
+        </div>
+      </div>
+      <div class="county-card">
+        <div class="county-info">
+          <div class="county-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16z"/></svg>
+          </div>
+          <div>
+            <div class="county-name">Cache County</div>
+            <div class="county-num">(435) 999-5563</div>
+          </div>
+        </div>
+        <div class="county-actions">
+          <a href="tel:+14359995563" class="county-call">Call</a>
+          <a href="sms:+14359995563" class="county-text">Text</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-trust">
+      <div class="trust-stars"><span class="stars">★★★★★</span>&nbsp;5.0 · 246 reviews</div>
+      <div class="trust-badge"><span class="trust-dot"></span>Est. 2023</div>
+      <div class="trust-badge"><span class="trust-dot"></span>3 Utah Counties</div>
+    </div>
+
+    <!-- ZIP Widget -->
+    <div class="widget-wrap">
+      <div class="widget-title">Check Your Service Area</div>
+      <div class="widget-sub">Enter your ZIP or use your location to book</div>
+      <div id="ots-widget">
+        <div id="ots-s0">
+          <div class="ots-zip-row">
+            <input class="ots-zip-input" id="ots-zip" type="number" inputmode="numeric" pattern="[0-9]*" placeholder="Enter ZIP code" maxlength="5"/>
+            <button class="ots-zip-btn" id="ots-zip-btn">Go</button>
+          </div>
+          <div class="ots-zip-err" id="ots-zip-err"></div>
+          <div class="ots-divider">or</div>
+          <button class="ots-loc-btn" id="ots-loc-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+            Use My Location
+          </button>
+        </div>
+        <div class="ots-state" id="ots-s1">
+          <div class="ots-spinner"></div>
+          <div class="ots-ld-t">Finding your location…</div>
+          <div class="ots-ld-s">Tap "Allow" when asked for location permission</div>
+        </div>
+        <div class="ots-state" id="ots-s2">
+          <div class="ots-addr-card">
+            <div class="ots-pin-dot"><svg viewBox="0 0 24 24" fill="white"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+            <div class="ots-addr-body">
+              <input class="ots-street" id="ots-street" type="text" autocomplete="off" spellcheck="false" placeholder="Street address"/>
+              <div class="ots-city" id="ots-city"></div>
+            </div>
+          </div>
+          <div class="ots-out" id="ots-out">⚠️ This address may be outside our current service area. Call us to confirm.</div>
+          <div class="ots-btn-row">
+            <button class="ots-btn-green" id="ots-btn-yes">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Yes, Book Here
+            </button>
+            <button class="ots-btn-ghost" id="ots-btn-no">Reset</button>
+          </div>
+          <p class="ots-note">*Note VIN inspection needed when booking</p>
+        </div>
+        <div class="ots-state" id="ots-s3">
+          <div class="ots-icon">📍</div>
+          <div class="ots-etitle">Couldn't get your location</div>
+          <div class="ots-emsg" id="ots-emsg">Location access was denied.</div>
+          <button class="ots-btn-outline" id="ots-btn-retry">Try Again</button>
+        </div>
+        <div class="ots-state" id="ots-s4">
+          <div class="ots-icon">✅</div>
+          <div class="ots-ok-t">You're all set!</div>
+          <div class="ots-ok-m" id="ots-okmsg">Taking you to booking…</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- RIGHT -->
+  <div class="hero-right">
+    <img
+      src="https://raw.githubusercontent.com/DanielMobileEmissions/onthespotrenewal/main/Untitled_design__1_.png"
+      alt="Mobile VIN inspection technician Utah — MobileEmissions.com comes to your driveway"
+    />
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+      State Certified
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+      TC-661 Certified
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+      We Come to You
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      5.0 Stars · 246 Reviews
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+      Utah, Davis &amp; Cache County
+    </div>
+  </div>
+</div>
+
+<!-- WHAT IS VIN + TC-661 -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">What is a VIN Inspection?</div>
+    <h2 class="section-title">VIN Inspections &amp; the <span>Utah TC-661 Form</span></h2>
+
+    <p class="section-body">A VIN (Vehicle Identification Number) inspection is an official physical verification that the VIN stamped on your vehicle matches your title and registration documents. In Utah, the results are recorded on the <strong>TC-661 Certificate of Inspection</strong> — the official state form you submit to the DMV to complete your vehicle registration.</p>
+
+    <!-- TC-661 callout -->
+    <div class="form-callout">
+      <div class="form-callout-icon">📋</div>
+      <div>
+        <h3>The Utah TC-661 Certificate of Inspection</h3>
+        <p>The TC-661 is Utah's official form required to register vehicles that need a VIN inspection. Only authorized individuals can sign it — including certified emissions stations like MobileEmissions.com.</p>
+        <p>We come to your location, physically inspect your VIN, complete the TC-661 form, and perform your emissions test — everything you need to walk into the DMV and get your vehicle registered.</p>
+        <p><a href="https://files.tax.utah.gov/tax/forms/current/TC-661.pdf" target="_blank" rel="noopener">Download the TC-661 form from Utah.gov →</a></p>
+      </div>
+    </div>
+
+    <div class="vin-callout">
+      <h3>When do you need a VIN inspection in Utah?</h3>
+      <ul>
+        <li>Registering a vehicle in Utah for the first time</li>
+        <li>Registering an out-of-state vehicle in Utah</li>
+        <li>Registering a rebuilt, salvage, or bonded title vehicle</li>
+        <li>When the Utah DMV specifically requests one on your paperwork</li>
+        <li>Registering a vehicle that has never been titled in Utah</li>
+        <li>Resolving a VIN discrepancy on your title or registration documents</li>
+      </ul>
+    </div>
+
+    <div class="emissions-callout">
+      <div class="emissions-callout-icon">💡</div>
+      <div>
+        <h3>Most vehicles also need an emissions test</h3>
+        <p>If your vehicle requires a VIN inspection to register in Utah, it will almost certainly also need an emissions test. Book a standard appointment at <a href="https://mobileemissions.com">mobileemissions.com</a> and mention your VIN inspection in the booking notes — we take care of both in one visit, in your driveway.</p>
+      </div>
+    </div>
+
+    <div class="benefits">
+      <div class="benefit"><div class="benefit-icon">🚗</div><div class="benefit-body"><h4>We Come to You</h4><p>No driving to a DMV or inspection station. We come to your home, workplace, or dealership at your scheduled time.</p></div></div>
+      <div class="benefit"><div class="benefit-icon">📋</div><div class="benefit-body"><h4>TC-661 Completed On Site</h4><p>We complete the official Utah TC-661 Certificate of Inspection right at your location. You get everything needed for the DMV.</p></div></div>
+      <div class="benefit"><div class="benefit-icon">⚡</div><div class="benefit-body"><h4>VIN + Emissions in One Visit</h4><p>We handle your VIN inspection and emissions test together — one appointment, maximum convenience.</p></div></div>
+      <div class="benefit"><div class="benefit-icon">📍</div><div class="benefit-body"><h4>3 Counties Served</h4><p>Utah County, Davis County, and Cache County. Enter your ZIP above to confirm availability in your area.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section hiw-bg">
+  <div class="section-inner">
+    <div class="section-label">How It Works</div>
+    <h2 class="section-title">Four Steps to <span>Get Your Vehicle Registered</span></h2>
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><h3>Book Online</h3><p>Schedule at <a href="https://mobileemissions.com" style="color:var(--blue);font-weight:800;">mobileemissions.com</a>. In the booking notes, mention that you need a VIN inspection along with your emissions test.</p></div>
+      <div class="step"><div class="step-num">2</div><h3>We Show Up</h3><p>Our certified technician comes to you. Have your title, bill of sale, and a valid ID ready. We inspect the VIN and test your emissions.</p></div>
+      <div class="step"><div class="step-num">3</div><h3>Get Your TC-661</h3><p>We complete the Utah TC-661 Certificate of Inspection on site. You receive the signed form along with your emissions results.</p></div>
+      <div class="step"><div class="step-num">4</div><h3>Go to the DMV</h3><p>Take your completed TC-661 and emissions results to the Utah DMV to finalize your vehicle registration. You're done.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ — SEO rich -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Common Questions</div>
+    <h2 class="section-title">Utah VIN Inspection <span>FAQs</span></h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">What is a VIN inspection and why do I need one in Utah?</div>
+        <div class="faq-a">A VIN inspection is a physical verification that the Vehicle Identification Number on your car matches your title documents. Utah requires them for out-of-state vehicles, rebuilt titles, or vehicles being registered in Utah for the first time. The results are recorded on the TC-661 Certificate of Inspection which you submit to the DMV.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What is the Utah TC-661 form?</div>
+        <div class="faq-a">The TC-661 is Utah's official Certificate of Inspection form. It must be completed by an authorized inspector — such as a DMV employee, peace officer, licensed dealer, or a certified emissions station like MobileEmissions.com. You submit the completed TC-661 to the Utah DMV to register your vehicle. You can <a href="https://files.tax.utah.gov/tax/forms/current/TC-661.pdf" target="_blank" rel="noopener">download the TC-661 from Utah.gov</a>.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can you come to my home for a VIN inspection in Utah?</div>
+        <div class="faq-a">Yes — that's exactly what we do. MobileEmissions.com is Utah's only mobile emissions and VIN inspection service. We come to your home, workplace, or dealership anywhere in our service area. No waiting at a station or DMV office.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do I need an emissions test AND a VIN inspection?</div>
+        <div class="faq-a">In most cases, yes. Vehicles being registered in Utah for the first time typically need both. We handle both in one visit — book a standard emissions appointment at mobileemissions.com and note the VIN inspection in your booking notes.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What do I need to have ready for my VIN inspection?</div>
+        <div class="faq-a">Have your vehicle title or bill of sale, current registration (if applicable), and a valid photo ID ready when our technician arrives. The physical inspection takes just a few minutes.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">I bought a car from another state. Do I need a VIN inspection to register it in Utah?</div>
+        <div class="faq-a">Yes — Utah requires a VIN inspection for all vehicles being registered in the state for the first time, including out-of-state purchases. You will also need a Utah emissions test. We handle both in one mobile appointment at your location.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Which Utah counties do you serve?</div>
+        <div class="faq-a">We currently serve Utah County, Davis County, and Cache County. Enter your ZIP code in the checker above to confirm your address is within our service area, or call your local number directly.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <h2>Need a Mobile VIN Inspection in Utah?</h2>
+  <p>We come to you — VIN inspection + emissions test + TC-661 form completed in one visit at your driveway.</p>
+  <div class="cta-btns">
+    <a href="https://mobileemissions.com/#book-now" class="cta-book">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      Book Your VIN Inspection
+    </a>
+    <a href="tel:8018008179" class="cta-phone">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16z"/></svg>
+      Call Utah County
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 <a href="https://mobileemissions.com">MobileEmissions.com</a> · Mobile VIN Inspections · TC-661 Certificate of Inspection</p>
+  <p style="margin-top:6px;">Utah County <a href="tel:+18018008179">(801) 800-8179</a> · Davis County <a href="tel:+14353343644">(435) 334-3644</a> · Cache County <a href="tel:+14359995563">(435) 999-5563</a></p>
+  <p style="margin-top:6px;"><a href="https://mobileemissions.com/vin-inspections/">More about VIN Inspections</a> · <a href="https://mobileemissions.com">MobileEmissions.com</a></p>
+</footer>
+
+<script>
+(function(){
+  var UTAH_ZONE1=['84003','84004','84005','84013','84042','84043','84045','84057','84058','84059','84062','84097'];
+  var UTAH_ZONE2=['84601','84602','84603','84604','84605','84606','84626','84628','84633','84651','84653','84655','84660','84662','84663','84664'];
+  var DAVIS=['84010','84011','84014','84015','84016','84089','84025','84037','84040','84041','84054','84056','84075','84087'];
+  var CACHE=['84304','84305','84308','84318','84319','84320','84321','84322','84323','84341','84325','84326','84327','84328','84332','84333','84335','84338','84339'];
+  var URLS={
+    utah_zone1:'https://mobileemissions.com/mobile-emissions-testing-utah-county/?zone=1',
+    utah_zone2:'https://mobileemissions.com/mobile-emissions-testing-utah-county/?zone=2',
+    davis:'https://mobileemissions.com/emissions-testing-davis-county/',
+    cache:'https://mobileemissions.com/emissions-testing-cache-county/',
+    outside:'https://mobileemissions.com/coming-soon/'
+  };
+  function route(z){
+    if(UTAH_ZONE1.indexOf(z)>-1)return'utah_zone1';
+    if(UTAH_ZONE2.indexOf(z)>-1)return'utah_zone2';
+    if(DAVIS.indexOf(z)>-1)return'davis';
+    if(CACHE.indexOf(z)>-1)return'cache';
+    return null;
+  }
+  var curRoute=null,currentZip='';
+  function showState(id){
+    ['ots-s1','ots-s2','ots-s3','ots-s4'].forEach(function(s){var el=document.getElementById(s);if(el)el.style.display='none';});
+    document.getElementById('ots-s0').style.display=id==='ots-s0'?'block':'none';
+    if(id!=='ots-s0'){var el=document.getElementById(id);if(el)el.style.display='flex';}
+  }
+  function handleZip(){
+    var zip=document.getElementById('ots-zip').value.trim();
+    var err=document.getElementById('ots-zip-err');
+    if(!zip||zip.length!==5||isNaN(zip)){err.textContent='Please enter a valid 5-digit ZIP';return;}
+    err.textContent='';currentZip=zip;curRoute=route(zip);
+    document.getElementById('ots-street').value='';
+    document.getElementById('ots-city').textContent=zip;
+    var out=document.getElementById('ots-out');
+    if(!curRoute){out.classList.add('on');curRoute='outside';}else{out.classList.remove('on');}
+    showState('ots-s2');
+  }
+  function startLoc(){
+    if(!navigator.geolocation){document.getElementById('ots-emsg').textContent='Your browser does not support location services.';showState('ots-s3');return;}
+    showState('ots-s1');
+    navigator.geolocation.getCurrentPosition(onGPS,onErr,{enableHighAccuracy:true,timeout:15000,maximumAge:0});
+  }
+  function onGPS(p){
+    var lat=p.coords.latitude,lng=p.coords.longitude;
+    fetch('https://nominatim.openstreetmap.org/reverse?lat='+lat+'&lon='+lng+'&format=json&addressdetails=1',{headers:{'Accept-Language':'en'}})
+    .then(function(r){return r.json();})
+    .then(function(d){
+      var a=d.address||{};
+      var st=(a.house_number&&a.road)?a.house_number+' '+a.road:(a.road||(d.display_name||'').split(',')[0]);
+      var zip=a.postcode||'';var city=a.city||a.town||a.village||a.hamlet||'';
+      document.getElementById('ots-street').value=st;
+      document.getElementById('ots-city').textContent=[city,'UT',zip].filter(Boolean).join(', ');
+      currentZip=zip;curRoute=route(zip);
+      var out=document.getElementById('ots-out');
+      if(!curRoute){out.classList.add('on');curRoute='outside';}else{out.classList.remove('on');}
+      showState('ots-s2');
+    })
+    .catch(function(){
+      document.getElementById('ots-street').value='Near '+lat.toFixed(4)+', '+lng.toFixed(4);
+      document.getElementById('ots-city').textContent='Utah, UT';
+      curRoute='outside';showState('ots-s2');
+    });
+  }
+  function onErr(e){
+    var msgs={1:'Location access was denied. Please try again.',2:"We couldn't determine your location.",3:'Location timed out. Try stepping outside.'};
+    document.getElementById('ots-emsg').textContent=msgs[e.code]||'Something went wrong.';
+    showState('ots-s3');
+  }
+  function confirmLoc(){
+    var r=curRoute||'outside';
+    var lb={utah_zone1:'Utah County',utah_zone2:'Utah County',davis:'Davis County',cache:'Cache County',outside:'our service page'};
+    document.getElementById('ots-okmsg').textContent='Taking you to '+lb[r]+' booking…';
+    showState('ots-s4');
+    setTimeout(function(){window.location.href=URLS[r];},1400);
+  }
+  function reset(){
+    curRoute=null;currentZip='';
+    document.getElementById('ots-zip').value='';
+    document.getElementById('ots-zip-err').textContent='';
+    document.getElementById('ots-street').value='';
+    document.getElementById('ots-city').textContent='';
+    document.getElementById('ots-out').classList.remove('on');
+    showState('ots-s0');
+  }
+  document.getElementById('ots-zip-btn').addEventListener('click',handleZip);
+  document.getElementById('ots-zip').addEventListener('keydown',function(e){if(e.key==='Enter')handleZip();});
+  document.getElementById('ots-loc-btn').addEventListener('click',startLoc);
+  document.getElementById('ots-btn-yes').addEventListener('click',confirmLoc);
+  document.getElementById('ots-btn-no').addEventListener('click',reset);
+  document.getElementById('ots-btn-retry').addEventListener('click',reset);
+})();
+</script>
+</body>
+</html>
